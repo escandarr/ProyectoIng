@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Audio</title>
+</head>
+<body>
+    <h1>Upload Audio</h1>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.name.label }}<br>
+            {{ form.name(size=32) }}
+        </p>
+        <p>
+            {{ form.client_name.label }}<br>
+            {{ form.client_name(size=32) }}
+        </p>
+        <p>
+            {{ form.campaign_name.label }}<br>
+            {{ form.campaign_name(size=32) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Management System</title>
+</head>
+<body>
+    <h1>Uploaded Audios</h1>
+    <ul>
+        {% for audio in audios %}
+        <li>{{ audio.name }} - {{ audio.client_name }} - {{ audio.campaign_name }} - {{ audio.status }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('upload') }}">Upload New Audio</a>
+</body>
+</html>
